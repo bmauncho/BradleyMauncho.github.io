@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SpaceAndGun</title>
+    <link rel="stylesheet" href="SpaceandGunstyle.css">
+    <script src="https://kit.fontawesome.com/c25f7a3891.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="index.html">
+                    <img src="Images/logo.png" alt="logo">
+                </a>
+                <ul id="sidemenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#portfolio">Portfolio</a></li>
+                    <li><a href="index.html#contact">Contact Us</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1><span>Space and Gun</span></h1>
+                <p>Duration : 3 months<br> Platform : Blender and Unity
+                <br>Role : Game developer, sound designer and UI / UX Design.</p> 
+            </div>
+            
+        </div>
+        
+    </div>
+    <div id="content">
+        <div class="container">
+            <div class="Content-text">
+                <div class="header-img">
+                </div>
+                <h2>WELCOME TO SPACE AND GUN!</h2>
+                <p> I was assigned to create a two-level game for students in grades 6 and under.
+                    The game should include the following elements/features: 3D animated character
+                    /characters,3D environment design, barriers and collisions, points/lives count,
+                    two levels, game start user interfaces (UI) user experience (UX) design, game 
+                    end user interfaces (UI) user experience (UX) design,and congratulatory user
+                    interfaces (UI) user experience (UX) design.
+                </p>
+            </div>
+            <div class="Content-text">
+                <h2>CONCEPT</h2>
+                <p>The player (interaction) to help overcome (obstacle) to achieve (goal).
+                    The player controls the direction of a man running around an area and 
+                    avoid being killed by enemies to achieve visiting more locations and 
+                    collecting objects (weapons, health and bullets) to win the game and 
+                    protect the human race from the evil menace.
+                </p>
+            </div>
+            <div class="Content-text">
+                <h2>ENVIRONMENT DESIGN</h2>
+                <p> The environment will be a simple 3d space in which the characters will be accommodated.<br> 
+                    The environment includes a road, trees, fires and walls etc.<br>
+                    The game also includes objects, items and weapons as part of the environment and can be collected as the game continues.<br>
+                </p>
+            </div>
+            <div class="Content-text">
+                <h2>GAME CHARACTERISTICS</h2>
+                <p> It is a first person shooter(FPS) game.<br>
+                    The character shooting other characters(enemies).<br>
+                    The game has opponents(enemies).<br>
+                    The game character has lives(100 max).<br>
+                    The game has obstacles.<br>
+                    The game has objects, tools and weapons.<br>
+                    Game allows shooting opponents and other strategies to win.<br>
+                    Smashing obstacles is possible but limited to certain weapons.<br>
+                </p>
+            </div>
+        </div>
+    </div>
+    <div id="UX-content">
+        <div class="container">
+            <div class="ux-imgs">
+                <img src="Images/Userflow.jpg">
+            </div>
+
+        </div>
+    </div>
+    <div id="Content-Imgs">
+        <div class="container">
+           <div class="content-gallery">
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="Images/SNG-1.png" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="Images/SNG-2.png" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="Images/SNG-3.png" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="Images/SNG-4.png" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="Images/SNG-5.png" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="Images/SNG-6.png" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="Images/SNG-7.png" style="width:100%">
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="Images/SNG-8.png" style="width:100%">
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                <!-- The dots/circles -->
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                </div>
+           </div>
+        </div>
+    </div>
+    <div id="content-Videos">
+        <div class="container">
+            <div class="content-wrapper">
+                <div class="content-videos">
+                    <video id="slider" autoplay loop muted controls>
+                        <source src="Videos/spaceandgun.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>    
+           </div>
+        </div>
+        <div class="copyright">
+            <p> Copyright <span>&#169</span> Mauncho.All rights reserved.</p>
+        </div>
+    </div>
+</body>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) 
+    {
+        showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) 
+    {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) 
+    {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) 
+        {
+            slideIndex = 1
+        }
+        if (n < 1) 
+        {
+            slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) 
+        {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) 
+        {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+    }
+</script>
+<script>
+    function videoUrl(url) {
+        document.getElementById("slider").src = url;
+    }
+</script>
+</html>

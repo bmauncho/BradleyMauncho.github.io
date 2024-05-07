@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c25f7a3891.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="Images/logo.png" alt="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Developer | 2D & 3D Animator | Illustrator</p>
+            <h1>Hello there! I'm<br><span>Bradley Mauncho</span> from Kenya</h1>
+        </div>
+    </div>
+
+</div>
+<!-- ----------about-------- -->
+<div id="about" name="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="Images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-tittle">About Me</h1>
+                <p>A game developer with a background in digital art and interactive media design.<br> Using my skills and experience,
+                    I apply myself to projects for both individuals and companies that require ideation,<br> research and game development using Unity and Blender as the mediums of choice.
+                    Some of my notable accomplishments include;
+                    Ideated and developed the Hawker 101 exhibited in Documetor 15- Kassel Germany 
+                    (an international program for global creatives and developers ) as the only Kenyan RPG Game.
+
+                </p>
+                    <div class="tabs-tittles">
+                        <p class = "tabs-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class = "tabs-links" onclick="opentab('experience')">Experience</p>
+                        <p class = "tabs-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tabs-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Game Developement</span><br> Developing games for Mobile Devices.</li>
+                            <li><span>Animation</span><br>Creating experiences through motion.</li>
+                            <li><span>UX/UI</span><br> Designing web interfaces.</li>
+                            <li><span>Designer</span><br> Creating appealling graphics designs to help brands.</li>
+                            <li><span>AR/VR Developement</span><br> Experience an immersive AR/VR experience that merges reality and imagination.</li>
+                            <li><span>Other Skills</span><br>Proficient in working with Unity,Blender,Adobe Photoshop,Adobe After Effects and Adobe Illustrator.</li>
+                        </ul>
+                    </div>
+                    <div class="tabs-contents"  id="experience">
+                        <ul>
+                            <li><span>2022 - Present</span><br> Developer at Mekan Games.</li>
+                            <li><span>2022 - 2022</span><br> Internship at Mekan Games.</li>
+                            <li><span>2022 - 2022</span><br> Animator and Storyboarder for CADA HABILIMENTS.</li>
+                            <li><span>2021 - 2022</span><br> Animator and Graphic designer for Moov Cafe & Bistro.</li>
+                            <li><span>2019 -2022</span><br>Animator,Illustrator and Gaphic designer at Gamara Designs.</li>
+                        </ul>
+                    </div>
+                    <div class="tabs-contents" id="education">
+                        <ul>
+                            <li><span>2018-2022</span><br> UnderGraduate Degree from The Technical University of Kenya.</li>
+                        </ul>
+                    </div>    
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------------------services--------------- -->
+<div id="services" name="services">
+    <div class="container">
+        <h1 class="sub-tittle">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-mobile-screen"></i>
+                <i class="fa-solid fa-laptop-code"></i>
+                <h2>Game Developement</h2>
+                <p>I offer personalized gaming experiences, utilizing Unity Engine development for mobile and VR games.
+                    Explore my portfolio and collaborate to create your next gaming hit.</p>
+                <a href="#contact">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-clapperboard"></i>
+                <h2>Animation</h2>
+                <p>My services offer innovative 2D and 3D visualizations, specializing in character animation, 
+                    motion graphics, and storytelling, blending creativity with technological expertise to create captivating narratives.</p>
+                <a href="#contact">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>Graphic Design</h2>
+                <p>My services enhance brand visual appeal, creating unified identities, logos, and marketing materials. 
+                    My designs impact from conception to completion, transforming ideas into compelling narratives.</p>
+                <a href="#contact">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Ux/UI & Web Design</h2>
+                <p>My services enhance digital experiences, combining user-centric design concepts for enthralling 
+                    and engaging experiences, including responsive web design and app interfaces.</p>
+                <a href="#contact">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--------- portfolio -------->
+<div id="portfolio"  name="portfolio">
+    <div class="container">
+        <h1 class="sub-tittle">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/work-4.png">
+                <div class="layer">
+                    <h3>Game Developement</h3>
+                    <p> A multimodal game experience that offers a fresh perspective on life.</p>
+                    <a href="gamedev.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/work-1.png">
+                <div class="layer">
+                    <h3>Animation</h3>
+                    <p> You imagine, I create.</p>
+                    <a href="Animation.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/work-2.png">
+                <div class="layer">
+                    <h3>Graphic Design</h3>
+                    <p> Graphic designing with creative thinking.</p>
+                    <a href="Graphics.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+                   
+            </div>
+            <div class="work">
+                <img src="Images/work-3.png">
+                <div class="layer">
+                    <h3>UX/UI & Web Developement</h3>
+                    <p> You imagine, I create.</p>
+                    <a href="Webdev.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+            </div>
+            <div class="work">
+                <img src="Images/Vr-headset.jpg.png">
+                <div class="layer">
+                    <h3>AR/VR</h3>
+                    <p> Step into the Story.</p>
+                    <a href="vR.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+
+            </div>
+        </div>
+        
+    </div>
+</div>
+<!------ contact ------>
+<div id="contact" name="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-tittle">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> bmauncho69@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 0706118458</p>
+                <div class="social-icons">
+                    <a href="https://web.facebook.com/profile.php?id=100067794955937"><i class="fa-brands fa-facebook"></i></i></a>
+                    <a href="https://twitter.com/BradleyMauncho"><i class="fa-brands fa-x-twitter"></i></i></a>
+                    <a href="https://www.instagram.com/_ma.uncho._/"><i class="fa-brands fa-instagram"></i></i></a>
+                    <a href="https://www.linkedin.com/in/bradley-mauncho/"><i class="fa-brands fa-linkedin"></i></i></i></a>
+                    <a href="https://www.behance.net/bradleymauncho"><i class="fa-brands fa-square-behance"></i></i></i></i></a>
+                    <a href="https://github.com/bmauncho"><i class="fa-brands fa-square-github"></i></i></i></i></a>
+                </div>
+                <a href="CV/Bradley Mauncho Resume_2024.pdf" download class="btn cv"> DownLoad CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder=" Your Name" required/>
+                    <input type="email" name="Email" placeholder="Your Email" required/>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2"  id="loadButton">
+                        <i class="fa-solid fa-circle-notch fa-spin" id="loader"></i>
+                        Submit
+                    </button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p> Copyright <span>&#169</span> Mauncho.All rights reserved.</p>
+    </div>
+</div>
+<script>
+
+    var tabslinks =  document.getElementsByClassName("tabs-links");
+    var tabscontents =  document.getElementsByClassName("tabs-contents");
+    function opentab(tabsname) 
+    {
+      for(tabslink  of tabslinks)
+      {
+        tabslink.classList.remove("active-link");
+      }
+      for(tabscontent  of tabscontents)
+      {
+        tabscontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabsname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbxoABhJa-kAjJ9JtyXYtcBP4aaFgsIEsNN8b96IXX4mN6twjpNMJcmoLon7wKkkQ4e3xg/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+  const loadButton = document.getElementById('loadButton');
+  const loader = document.getElementById('loader'); 
+
+  form.addEventListener('submit', e => 
+  {
+      loadButton.disabled = true;
+      loader.style.display = 'inline-block';
+    e.preventDefault()
+    fetch(scriptURL, 
+    { 
+        method: 'POST', body: new FormData(form)})
+      .then(response => 
+      {msg.innerHTML = "Message sent successfully"
+          setTimeout(function () {
+              loadButton.disabled = false;
+              loader.style.display = 'none';
+              msg.innerHTML = "";
+          }, 500)
+        form.reset()})
+      .catch(error => console.error('Error!', error.message))
+    })
+</script>
+</body>
+</html>

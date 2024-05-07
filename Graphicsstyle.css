@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #26272a;
+    color: #fff;
+}
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav a{
+    z-index: 1000;
+}
+.logo{
+    &::before{ 
+        width: 140px;
+    }
+
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: rgba(255, 255, 255,1);
+    text-decoration: none;
+    font-size:  18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after {
+    width: 100%;
+}
+/*--------- Gamedevpage----------*/
+#Subpages-header{
+    width: 100%;
+    height: 100vh;
+    
+    &::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        z-index: 100px;
+        background-image: url(Images/Graphics_Backround.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 0.35;
+    }
+
+}
+.Subpages-container{
+    padding: 10px 10%;
+}
+.Subpagesheader-text{
+    text-align: center;
+    font-size: 25px;
+    position: relative;
+}
+.Subpagesheader-text h1{
+    font-size: 75px;
+    margin-top: 70px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+.Subpagesheader-text p{
+    margin-top: 70px;
+}
+nav img{
+    z-index: 1;
+}
+/*-----------Gamedev projects-------*/
+#Subpages-Projects{
+    padding: 30px 0;
+}
+.Subpages-projectlist{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 0 20%;
+}
+.wrapper{
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.Subpages-project{
+    border-radius: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.Subpages-project img{
+    width: 100%;
+    border-radius: 20px;
+    display: block;
+    transition: 0.5s;
+}
+.Subpages-layer{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.6),#ff004f);
+    opacity: 0;
+    border-radius: 20px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: opacity 0.5s;
+}
+.Subpages-layer a{
+    margin-top: 20px;
+    color: #ff004f;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 60px;
+    height:60px;
+    border-radius: 50%;
+    text-align: center;
+}
+.Subpages-project:hover img{
+    transform: scale(1.1);
+}
+.Subpages-project:hover .Subpages-layer{
+    opacity: 1;
+}
+
+.copyright-Subpages{
+    width: 100%;
+    text-align: center;
+    padding: 25px;
+    background: #4c4c4c;
+    font-weight: 300;
+    position: absolute;
+}
+
+/*--------- css for small screens ----------*/
+
+nav .fa-solid{
+    &::before{
+        display: none;
+    }
+}
+@media only screen and (max-width: 700px){
+    nav a{
+        z-index: 1000;
+    }
+    .logo{
+        &::before{
+            width: 50px;
+        }
+    }
+    nav i.fa-solid{
+        display: inline-block;
+        z-index: 1;
+        font-size: 25px;
+        &::before{
+            display: inline-block;
+            font-size: 25px;
+            z-index: 2;
+        }
+    }
+    nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 150vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    
+    nav ul li{
+       display: block;
+        margin: 25px;
+        z-index: 2;
+        
+    }
+
+    nav ul i.fa-solid{
+        &::before{
+            position: absolute;
+            top: 25px;
+            left: 25px;
+            z-index: 2;
+            cursor: pointer;
+        }
+        
+    }
+    #Subpages-header{
+        &::before{
+            content: '';
+            position: absolute;
+            background-image: url(Images/Graphics_phonebackground.png); 
+            opacity: 0.35;
+        }
+        
+    }
+    #Subpages-Projects{
+        position: absolute;
+        width: 100%;
+        height: 60%;
+        z-index: 100px;
+        background: #26272a;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+  
+    .Subpages-container.logo{
+        &::before{
+            width: 140px;
+        }
+    }
+    .Subpagesheader-text h1{
+        font-size: 30px;
+        position: relative;
+        margin-top: 200px;
+    }
+    .Subpagesheader-text p{
+        font-size:16px;
+        margin-top: 0;
+    }
+    .wrapper{
+        flex-wrap: wrap;
+    }
+    .Subpages-projectlist{
+        flex-basis: 100%;
+        padding: 0 0;
+    }
+    .copyright-Subpages{
+        width: 100%;
+        text-align: center;
+        padding: 25px;
+        background: #4c4c4c;
+        font-weight: 300;
+        font-size: 12px;
+    }
+}
+#msg{
+    color: #61b752;
+    margin-top: -40px;
+    display: block;
+}

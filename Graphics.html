@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphics</title>
+    <link rel="stylesheet" href="Graphicsstyle.css">
+    <script src="https://kit.fontawesome.com/c25f7a3891.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="Subpages-header">
+    <div class="Subpages-container">
+        <nav>
+            <a href="index.html">
+                <img src="Images/logo.png" alt="logo">
+            </a>
+            <ul id="sidemenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#portfolio">Portfolio</a></li>
+                <li><a href="index.html#contact">Contact Us</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+            <div class="Subpagesheader-text">
+                <h1><span></span>Graphics<br></span></h1>
+                <p>Graphic designing with creative thinking.</p>
+            </div>
+    </div>
+</div>
+<div id="Subpages-Projects">
+    <div class="Subpages-container">
+        <div class="wrapper">
+            <div class="Subpages-projectlist">
+                <div class="Subpages-project">
+                    <img src="Images/Moov.png">
+                    <div class="Subpages-layer">
+                        <h3>MOOVE CAFE & BISTRO</h3>
+                        <p>2022</p>
+                        <a href="MooveGraphics.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="Subpages-project">
+                    <img src="Images/Illustrations.png">
+                    <div class="Subpages-layer">
+                        <h3>ILLUSTRATIONS</h3>
+                        <p>2022</p>
+                        <a href="Illustrations.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="Subpages-project">
+                    <img src="Images/Art.png">
+                    <div class="Subpages-layer">
+                        <h3>ART</h3>
+                        <p>2022</p>
+                        <a href="Art.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <div class="copyright-Subpages">
+        <p> Copyright <span>&#169</span> Mauncho.All rights reserved.</p>
+    </div>
+</div>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+</body> 
+</html>

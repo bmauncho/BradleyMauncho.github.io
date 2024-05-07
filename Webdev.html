@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ux/Ui</title>
+    <link rel="stylesheet" href="WebdevStyle.css">
+    <script src="https://kit.fontawesome.com/c25f7a3891.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="Subpages-header">
+    <div class="Subpages-container">
+        <nav>
+            <a href="index.html">
+                <img src="Images/logo.png" alt="logo">
+            </a>
+            <ul id="sidemenu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#portfolio">Portfolio</a></li>
+                <li><a href="index.html#contact">Contact Us</a></li>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+            </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+            <div class="Subpagesheader-text">
+                <h1><span></span>UX/UI<br></span></h1>
+                <p>You imagine, I create</p>
+            </div>
+    </div>
+</div>
+<div id="Subpages-Projects">
+    <div class="Subpages-container">
+        <div class="wrapper">
+            <div class="Subpages-projectlist">
+                <div class="Subpages-project">
+                    <img src="Images/Ux-design.png">
+                    <div class="Subpages-layer">
+                        <h3>DOWN SCHOOL</h3>
+                        <p>2021</p>
+                        <a href="https://www.figma.com/proto/MiAn084XQI7HceMTTUMRVD/Untitled?type=design&node-id=5-141&t=50M84UfB50dSNxng-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=5%3A141"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="Subpages-project">
+                    <img src="Images/Ux-design2.png">
+                    <div class="Subpages-layer">
+                        <h3>HAWKER-101</h3>
+                        <p>2022</p>
+                        <a href="https://www.figma.com/proto/Yqoy8p9uaahMufOaLB6JaH/HAWKER-101-UI-%2F-UX?node-id=2-3&starting-point-node-id=2%3A3"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="Subpages-project">
+                    <img src="Images/Ux-design3.png">
+                    <div class="Subpages-layer">
+                        <h3>PERSONAL-PORTFOLIO</h3>
+                        <p>2024</p>
+                        <a href="index.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> 
+    <div class="copyright-Subpages">
+        <p> Copyright <span>&#169</span> Mauncho.All rights reserved.</p>
+    </div>
+</div>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+</body> 
+</html>

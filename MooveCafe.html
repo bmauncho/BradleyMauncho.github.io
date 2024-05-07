@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moovecafe&Bistro</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="Moovestyle.css">
+    <script src="https://kit.fontawesome.com/c25f7a3891.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="index.html">
+                    <img src="Images/logo.png" alt="logo">
+                </a>
+                <ul id="sidemenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#portfolio">Portfolio</a></li>
+                    <li><a href="index.html#contact">Contact Us</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+                <div class="header-text">
+                    <h1><span></span>Moovecafe Animation<br></span></h1>
+                    <p>Duration : 1 month | Platform : Adobe After Effects and Adobe Illustrator | Role : Story boarding ,animation and sound design</p>
+                </div>
+        </div>
+    </div>
+    <div id="content-Videos">
+        <div class="container">
+            <div class="content-wrapper">
+                <div class="content-videos">
+                    <video id="slider" autoplay loop muted controls>
+                        <source src="Videos/Moov_ad.mp4 " type="video/mp4">
+                    </video>
+                </div>
+            </div>    
+           </div>
+        </div>
+        <div class="copyright">
+            <p> Copyright <span>&#169</span> Mauncho.All rights reserved.</p>
+        </div>
+    </div> 
+</body>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+</html>

@@ -1,0 +1,308 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body {
+    background: #26272a;
+    color: #fff;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    
+    &::before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        z-index: 100px;
+        background-image: url(Images/gamedevbackground.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 0.35;
+    }
+}
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+nav a{
+    z-index: 1000;
+}
+.logo{
+    &::before{
+        width: 140px;
+    }
+    
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: rgba(255, 255, 255,1);
+    text-decoration: none;
+    font-size:  18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after {
+    width: 100%;
+}
+.header-text{
+    text-align: center;
+    font-size: 25px;
+    position: relative;
+
+}
+.header-text h1{
+    font-size: 75px;
+    margin-top: 70px;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+.header-text p{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 300;
+    position: relative;
+}
+nav .fa-solid{
+    display: none;
+}
+/*------- carousel ----- */
+#Moov-Graphics{
+    padding: 30px 0;
+}
+.mySlides {
+    display: none;
+}
+.mySlides img{
+    border-radius: 20px;
+}
+.content-gallery{
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    margin-left: -70px;
+    margin-right: -70px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+  
+ /* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+  
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+  
+ /* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+  
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+  
+.active, .dot:hover {
+    background-color: #717171;
+}
+  
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px;
+    background: #4c4c4c;
+    font-weight: 300;
+    position: absolute;
+}
+@media only screen and (max-width: 700px){
+    nav a{
+        z-index: 1000;
+    }
+    #header{
+        &::before{
+            content: '';
+            position: absolute;
+            background-image: url(Images/Gamedevphone-background.png); 
+            opacity: 0.35;
+        } 
+    }
+    .logo{
+        &::before{
+            width: 50px;
+        }
+    }
+    .header-text{
+        margin-top: 75%;
+        font-size:16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+        position: relative;
+        margin-top: 175px;
+    }
+    .header-text p{
+        color: #fff;
+        font-size: 12px;
+        position: relative;
+    }
+    nav i.fa-solid{
+        display: inline-block;
+        z-index: 1;
+        font-size: 25px;
+        color: #fff;
+        &::before{
+            display: inline-block;
+            z-index: 2;
+            color: #fff;
+        }
+    }
+    nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 150vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    
+    nav ul li{
+        display: block;
+        margin: 25px;
+        z-index: 2;
+    }
+
+    nav ul i.fa-solid{
+        &::before{
+            position: absolute;
+            top: 25px;
+            left: 25px;
+            z-index: 2;
+            cursor: pointer;
+        }
+        
+    }
+    .Content-text{
+        font-size: 25px;
+        margin-top: 20px;
+    }
+    .Content-text h2{
+        margin-top: 20px;
+        font-size: 18px;
+    }
+    .Content-text p{
+        margin-top: 20px;
+        font-size:  14px;
+        justify-content: left;
+    }
+    .header-img img{
+        min-width: 300px;
+        max-width: 500px;
+        align-items: center;
+        position: relative;
+        flex-basis: 100%;
+    }
+    .copyright{
+        width: 100%;
+        text-align: center;
+        padding: 25px;
+        background: #4c4c4c;
+        font-weight: 300;
+        font-size: 12px;
+    }
+    .dot {
+        cursor: pointer;
+        height: 10px;
+        width: 10px;
+        margin: 0 2px;
+        background-color: #bbb;
+    }
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -22px;
+        margin-left: -40px;
+        margin-right: -40px;
+        padding: 16px;
+        font-size: 12px;
+    } 
+}

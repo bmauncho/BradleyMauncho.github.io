@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D-Animation</title>
+    <link rel="stylesheet" href="2DAnimStyle.css">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/c25f7a3891.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="index.html">
+                    <img src="Images/logo.png" alt="logo">
+                </a>
+                <ul id="sidemenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#portfolio">Portfolio</a></li>
+                    <li><a href="index.html#contact">Contact Us</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+                <div class="header-text">
+                    <h1><span></span>2D-Animation<br></span></h1>
+                    <p>Duration : 3 weeks | Platform : Adobe After Effects and Adobe Illustrator | Role : Animating</p>
+                </div>
+        </div>
+    </div> 
+    <div id="Animations">
+        <div class="container"> 
+            <div class="content-wrapper">
+                <div class="video-carousel">
+                    <div class="content-videos">
+                        <div class="mySlides fade">
+                            <video id="slider" autoplay loop muted controls>
+                                <source src="Videos/cada.mp4" type="video/mp4">
+                            </video>
+                            <h2>CADA-HABILIMENTS</h2>
+                            <p>Life imitates art, and art imitates life. 
+                                I set out to develop my talents while emulating art in the following animations. 
+                                This was done in order to produce visually appealing animations.
+                            </p>
+                        </div>
+                        <div class="mySlides fade">
+                            <video id="slider" autoplay loop muted controls>
+                                <source src="Videos/Nyumba.mp4" type="video/mp4">
+                            </video>
+                            <h2>NYUMBA</h2>
+                            <p>I was learning 2D animation looping using simple shapes and contrast to achieve the required effects in this clip.
+                            </p>
+                        </div>
+                        <div class="mySlides fade">
+                            <video id="slider" autoplay loop muted controls>
+                                <source src="Videos/Phone.mp4" type="video/mp4">
+                            </video>
+                            <h2>PHONE</h2>
+                            <p>
+                                In Swahili, a house is referred to as a "nyumba."
+                                I used rotation and perspective in this animation to give it a feeling of volume and a 3D appearance and feel as a method of exploring new techniques in 2D design.
+                            </p>
+                        </div>
+                        <div class="mySlides fade">
+                            <video id="slider" autoplay loop muted controls>
+                                <source src="Videos/Aliens.mp4" type="video/mp4">
+                            </video>
+                            <h2>ABDUCTION</h2>
+                            <p>In this animation, both rotation and perspective are used to give the phone a spinning appearance, creating the impression of dimension and depth.
+                            </p>
+                        </div>
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                        <span class="dot" onclick="currentSlide(4)"></span>
+                    </div>
+                </div>
+                </div>
+            </div>  
+        </div> 
+        <div class="copyright">
+            <p> Copyright <span>&#169</span> Mauncho.All rights reserved.</p>
+        </div>
+    </div>
+</body>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    // Next/previous controls
+    function plusSlides(n) 
+    {
+        showSlides(slideIndex += n);
+    }
+
+    // Thumbnail image controls
+    function currentSlide(n) 
+    {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) 
+    {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) 
+        {
+            slideIndex = 1
+        }
+        if (n < 1) 
+        {
+            slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) 
+        {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) 
+        {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+    }
+</script>
+</html>
