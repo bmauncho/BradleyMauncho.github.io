@@ -28,31 +28,31 @@
             <div class="header-text">
                 <h1><span>Hawker101</span></h1>
                 <p>Duration : 7 month(January 2022 - August 2022) <br> Platform : Blender,Adobe Photoshop,Adobe In design,Adobe After Effects and Adobe Illustrator
-                <br> Role : Game design ,story boarding ,animation and sound design</p> 
+                <br> Role : Game design ,story boarding ,animation and sound design</p>
             </div>
-            
+
         </div>
-        
+
     </div>
     <!------ content ------>
     <div id="content">
         <div class="container">
             <div class="Content-text">
                 <div class="header-img">
-                    <img src="Images/Hawker101-1.png" alt="hawker" > 
+                    <img src="Images/Hawker101-1.png" alt="hawker" >
                 </div>
                 <h2>WELCOME TO HAWKER101!</h2>
                 <p> This piece was created for the documenta fifteen exhibition in Kassel, Germany.
                     I'm delighted one of my ideas was taken up and recreated to produce a board game version of the same idea.
-                    Hawker 101 is inspired by the lifestyle of informal street vendors (hawkers) and their day-to-day struggles to 
-                    make a living while avoiding conflict with the authorities. Hawker 101 virtualizes and gamifies their confrontations 
+                    Hawker 101 is inspired by the lifestyle of informal street vendors (hawkers) and their day-to-day struggles to
+                    make a living while avoiding conflict with the authorities. Hawker 101 virtualizes and gamifies their confrontations
                     with the police, entrepreneurial spirit, and fortitude.
                 </p>
             </div>
             <div class="Content-text">
                 <h2>CONCEPT</h2>
-                <p>The idea is to create a juakali experience based on the hawker/vending scene in our locality. 
-                    We decided to use concepts from games like subway surfers,temple run and several other games to 
+                <p>The idea is to create a juakali experience based on the hawker/vending scene in our locality.
+                    We decided to use concepts from games like subway surfers,temple run and several other games to
                     create a game that resonates with people in the current local scene.
                 </p>
             </div>
@@ -80,7 +80,7 @@
     </div>
     <div id="Content-Imgs">
         <div class="container">
-           <div class="content-gallery">
+           <div class="content-gallery" style="width:40%">
                 <div class="mySlides fade">
                     <div class="numbertext"></div>
                     <img src="Images/Hawker101-1-2.png" style="width:100%">
@@ -127,12 +127,12 @@
                 </div>
            </div>
         </div>
-       
+
     </div>
 
     <div id="Content-Icons">
-        <div class="container">
-           <div class="content-icons">
+        <div class="container" >
+           <div class="content-icons" >
                 <img src="Images/Hawker101-Icons.png">
            </div>
         </div>
@@ -152,7 +152,7 @@
                         <li><img onclick="videoUrl('Videos/Mgondii.mp4')" src="Images/hawker101-characters.png" alt=""></li>
                     </ul>
                 </div>
-            </div>    
+            </div>
            </div>
         </div>
         <div class="copyright">
@@ -175,35 +175,35 @@
         showSlides(slideIndex);
 
         // Next/previous controls
-        function plusSlides(n) 
+        function plusSlides(n)
         {
             showSlides(slideIndex += n);
         }
 
         // Thumbnail image controls
-        function currentSlide(n) 
+        function currentSlide(n)
         {
             showSlides(slideIndex = n);
         }
 
-        function showSlides(n) 
+        function showSlides(n)
         {
             let i;
             let slides = document.getElementsByClassName("mySlides");
             let dots = document.getElementsByClassName("dot");
-            if (n > slides.length) 
+            if (n > slides.length)
             {
                 slideIndex = 1
             }
-            if (n < 1) 
+            if (n < 1)
             {
                 slideIndex = slides.length
             }
-            for (i = 0; i < slides.length; i++) 
+            for (i = 0; i < slides.length; i++)
             {
                 slides[i].style.display = "none";
             }
-            for (i = 0; i < dots.length; i++) 
+            for (i = 0; i < dots.length; i++)
             {
                 dots[i].className = dots[i].className.replace(" active", "");
             }

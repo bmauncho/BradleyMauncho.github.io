@@ -39,11 +39,11 @@
                 </div>
                 <h2>VIRTUAL REALITY ROOM</h2>
                 <p> This was a project completed as part of a Unity Learn seminar where<br>
-                    I learned the ins and outs of Augmented Reality and Virtual Reality.<br> 
+                    I learned the ins and outs of Augmented Reality and Virtual Reality.<br>
                     It was fantastic to hear from and interact with professionals and educators in the industry..
                 </p>
             </div>
-            <div class="content-gallery">
+            <div class="content-gallery" style="width:50%">
                 <div class="mySlides fade">
                     <div class="numbertext"></div>
                     <img src="Images/SNG-1.png" style="width:100%">
@@ -91,12 +91,12 @@
                         <source src="Videos/BRADS VR ROOM.mp4" type="video/mp4">
                     </video>
                 </div>
-            </div>    
+            </div>
         </div>
         <div class="copyright">
             <p> Copyright <span>&#169</span> Mauncho.All rights reserved.</p>
         </div>
-    </div>   
+    </div>
 </body>
 <script>
     var sidemenu = document.getElementById("sidemenu");
@@ -112,35 +112,35 @@
     showSlides(slideIndex);
 
     // Next/previous controls
-    function plusSlides(n) 
+    function plusSlides(n)
     {
         showSlides(slideIndex += n);
     }
 
     // Thumbnail image controls
-    function currentSlide(n) 
+    function currentSlide(n)
     {
         showSlides(slideIndex = n);
     }
 
-    function showSlides(n) 
+    function showSlides(n)
     {
         let i;
         let slides = document.getElementsByClassName("mySlides");
         let dots = document.getElementsByClassName("dot");
-        if (n > slides.length) 
+        if (n > slides.length)
         {
             slideIndex = 1
         }
-        if (n < 1) 
+        if (n < 1)
         {
             slideIndex = slides.length
         }
-        for (i = 0; i < slides.length; i++) 
+        for (i = 0; i < slides.length; i++)
         {
             slides[i].style.display = "none";
         }
-        for (i = 0; i < dots.length; i++) 
+        for (i = 0; i < dots.length; i++)
         {
             dots[i].className = dots[i].className.replace(" active", "");
         }
