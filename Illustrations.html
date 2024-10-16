@@ -27,9 +27,9 @@
                         <i class="fa-solid fa-bars" onclick="openmenu()"></i>
                 </nav>
                     <div class="header-text">
-                        <h1><span></span>Moove Cafe Graphics<br></span></h1>
+                        <h1><span></span>Freelancing<br></span></h1>
                         <p>Digital Media Content<br>
-                            Duration : 5 months | Platform : Adobe Photoshop and Adobe Illustrator | Role : Graphic design
+                            Duration : 1 month | Platform : Adobe Photoshop and Adobe Illustrator | Role : Graphic design
                         </p>
                     </div>
             </div>
@@ -40,27 +40,47 @@
                 <div class="content-gallery">
                     <div class="mySlides fade">
                         <div class="numbertext"></div>
-                        <img src="Images/Moov-1.png" style="width:100%">
+                        <img src="Images/Happymashujaa Day.png" style="width:100%">
                     </div>
                     <div class="mySlides fade">
                         <div class="numbertext"></div>
-                        <img src="Images/Moov-2.png" style="width:100%">
+                        <img src="Images/hAPPY TREE PLANTING DAY.png" style="width:100%">
                     </div>
                     <div class="mySlides fade">
                         <div class="numbertext"></div>
-                        <img src="Images/Moov-3.png" style="width:100%">
+                        <img src="Images/GoFullThrottle2.png" style="width:100%">
                     </div>
                     <div class="mySlides fade">
                         <div class="numbertext"></div>
-                        <img src="Images/Moove-4.jpg" style="width:100%">
+                        <img src="Images/Fasten Your Seatbelts_6.png" style="width:100%">
                     </div>
                     <div class="mySlides fade">
                         <div class="numbertext"></div>
-                        <img src="Images/Moove-5.png" style="width:100%">
+                        <img src="Images/Experience Thrill.png" style="width:100%">
                     </div>
                     <div class="mySlides fade">
                         <div class="numbertext"></div>
-                        <img src="Images/Moov-6.png" style="width:100%">
+                        <img src="Images/EveryCrash.png" style="width:100%">
+                    </div>
+                     <div class="mySlides fade">
+                        <div class="numbertext"></div>
+                        <img src="Images/Drive yourluck.png" style="width:100%">
+                    </div>
+                     <div class="mySlides fade">
+                        <div class="numbertext"></div>
+                        <img src="Images/DontMiss2.png" style="width:100%">
+                    </div>
+                     <div class="mySlides fade">
+                        <div class="numbertext"></div>
+                        <img src="Images/Crashtoreward.png" style="width:100%">
+                    </div>
+                     <div class="mySlides fade">
+                        <div class="numbertext"></div>
+                        <img src="Images/CrashCourse3.png" style="width:100%">
+                    </div>
+                     <div class="mySlides fade">
+                        <div class="numbertext"></div>
+                        <img src="Images/BuckleUp_5.png" style="width:100%">
                     </div>
                     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                     <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -79,37 +99,37 @@
         <script>
             let slideIndex = 1;
             showSlides(slideIndex);
-        
+
             // Next/previous controls
-            function plusSlides(n) 
+            function plusSlides(n)
             {
                 showSlides(slideIndex += n);
             }
-        
+
             // Thumbnail image controls
-            function currentSlide(n) 
+            function currentSlide(n)
             {
                 showSlides(slideIndex = n);
             }
-        
-            function showSlides(n) 
+
+            function showSlides(n)
             {
                 let i;
                 let slides = document.getElementsByClassName("mySlides");
                 let dots = document.getElementsByClassName("dot");
-                if (n > slides.length) 
+                if (n > slides.length)
                 {
                     slideIndex = 1
                 }
-                if (n < 1) 
+                if (n < 1)
                 {
                     slideIndex = slides.length
                 }
-                for (i = 0; i < slides.length; i++) 
+                for (i = 0; i < slides.length; i++)
                 {
                     slides[i].style.display = "none";
                 }
-                for (i = 0; i < dots.length; i++) 
+                for (i = 0; i < dots.length; i++)
                 {
                     dots[i].className = dots[i].className.replace(" active", "");
                 }
@@ -125,6 +145,6 @@
             function closemenu(){
                 sidemenu.style.right = "-200px";
             }
-        </script> 
+        </script>
     </body>
 </html>
